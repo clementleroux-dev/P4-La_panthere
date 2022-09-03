@@ -92,40 +92,52 @@
               <form
                 id="form_1"
                 novalidate
-                data-success-msg="Your message has been sent."
-                data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+                data-success-msg="Votre message a été envoyé"
+                data-fail-msg="Désolé, l'envoi du message n'a pas pu être effectué"
               >
                 <div class="form-group">
-                  <label> Nom </label>
-                  <input id="name" class="form-control" required />
+                  <label for="name">Nom</label>
+                  <input
+                    id="name"
+                    type="name"
+                    class="form-control"
+                    placeholder="Entrer votre nom"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label> Adresse email </label>
+                  <label for="email">Adresse email</label>
                   <input
                     id="email"
                     class="form-control"
                     type="email"
+                    placeholder="Entrer votre email"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
-                  <input
+                  <label for="connu">Comment nous avez-vous connu ?</label>
+                  <textarea
                     class="form-control"
-                    type="email"
+                    type="text"
                     required
-                    id="input_504"
-                  />
+                    rows="5"
+                    cols="50"
+                    placeholder="Entrer votre message ici"
+                    id="connu"
+                  ></textarea>
                 </div>
                 <div class="form-group">
-                  <label>
+                  <label for="message">
                     Brief de votre projet (Ajoutez autant de détails que
-                    nécessaire)<br /> </label
+                    nécessaire) </label
                   ><textarea
                     id="message"
                     class="form-control"
-                    rows="4"
+                    rows="10"
                     cols="50"
+                    type="text"
+                    placeholder="Entrer votre message ici"
                     required
                   ></textarea>
                 </div>
