@@ -81,14 +81,6 @@
               <h1 class="text-center hero-bloc-text tc-white">
                 Agence La Panthère
               </h1>
-              <div class="text-center">
-                <a
-                  href="contact.html"
-                  class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine"
-                  id="cta-hero"
-                  >Contact</a
-                >
-              </div>
             </div>
           </div>
         </div>
@@ -101,7 +93,7 @@
             L'agence La Panthère est une agence de web design qui aide les
             entreprises à devenir attractives et visibles sur Internet
           </h2>
-          <div class="row voffset-lg med-width-whitespace">
+          <div class="row voffset-lg med-width-whitespace services">
             <article class="col-sm-4">
               <div class="text-center">
                 <span
@@ -142,7 +134,7 @@
               </p>
             </article>
           </div>
-          <figure class="text-center">
+          <figure class="text-center citation">
             <blockquote>
               <p>
                 "L'agence La Panthère est une excellente agence web ! Les web
@@ -164,20 +156,22 @@
         id="bloc-3-what-i-do"
       >
         <div class="row tight-width-whitespace black-background">
-          <h2 class="mg-md text-center tc-white">
-            Nous souhaitons aider les entreprises de la région Lyonnaise à se
-            développer et à connaître le succès. Nous travaillons pour aider les
-            entreprises locales à attirer de nouveaux clients .<br />
-          </h2>
-          <p class="text-center white">
-            Nous aimons collaborer avec des entrepreneurs créatifs et des
-            entreprises locale, qu’elles aient besoin de créer un site de A à Z
-            ou de donner un coup de jeune à leur site. Que vous ayez besoin
-            d’une identité visuelle complète ou d’une refonte de votre site,
-            n’hésitez pas à nous contacter. Nous travaillerons ensemble pour
-            créer des sites beau et bien structurés, qui seront facilement
-            trouvable sur les moteurs de recherche.
-          </p>
+          <div class="col-sm-12">
+            <h2 class="mg-md text-center ltc-atomic-tangerine">
+              Nous souhaitons aider les entreprises de la région Lyonnaise à se
+              développer et à connaître le succès. Nous travaillons pour aider
+              les entreprises locales à attirer de nouveaux clients .<br />
+            </h2>
+            <p class="text-center white">
+              Nous aimons collaborer avec des entrepreneurs créatifs et des
+              entreprises locale, qu’elles aient besoin de créer un site de A à
+              Z ou de donner un coup de jeune à leur site. Que vous ayez besoin
+              d’une identité visuelle complète ou d’une refonte de votre site,
+              n’hésitez pas à nous contacter. Nous travaillerons ensemble pour
+              créer des sites beau et bien structurés, qui seront facilement
+              trouvable sur les moteurs de recherche.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -289,18 +283,11 @@
       >
         <div class="container bloc-lg">
           <div class="row">
-            <h2 class="mg-md text-center tc-white">
-              Prêt pour redonner vie à votre projet ?
-            </h2>
-            <p>Contactez notre équipe !</p>
-            <!-- FIXIT  -->
-
-            <div class="col-sm-12 text-center">
-              <a
-                href="contact.html"
-                class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero"
-                >Contact</a
-              >
+            <div class="col-sm-12">
+              <h2 class="mg-md text-center tc-white">
+                Prêt pour redonner vie à votre projet ?<br />Contactez notre
+                équipe !
+              </h2>
             </div>
           </div>
         </div>
@@ -312,7 +299,7 @@
       <div class="container bloc-sm">
         <div class="row">
           <div class="col-sm-12">
-            <p class="text-center white">
+            <p class="text-center">
               Agence La Panthère - Agence web basée à Lyon.<br />
             </p>
             <div class="row row-no-gutters social">
@@ -366,9 +353,13 @@
       </div>
     </footer>
     <!-- ScrollToTop Button -->
-    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
-      ><span class="fa fa-chevron-up"></span
-    ></a>
+    <button
+      aria-label="gototop"
+      class="bloc-button btn btn-d scrollToTop"
+      onclick="scrollToTarget('1')"
+    >
+      <span class="fa fa-chevron-up"></span>
+    </button>
     <!-- ScrollToTop Button END-->
   </body>
 </html>

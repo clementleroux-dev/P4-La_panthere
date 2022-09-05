@@ -86,9 +86,9 @@
       <!-- MAIN_SECTION-FORM -->
       <section class="bloc bgc-white l-bloc" id="bloc-7">
         <h2 class="text-center">Formulaire de contact</h2>
-        <div class="container bloc-lg">
+        <div class="container">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
               <form
                 id="form_1"
                 novalidate
@@ -98,6 +98,7 @@
                 <div class="form-group">
                   <label for="name">Nom</label>
                   <input
+                    autocomplete="name"
                     id="name"
                     type="name"
                     class="form-control"
@@ -108,6 +109,7 @@
                 <div class="form-group">
                   <label for="email">Adresse email</label>
                   <input
+                    autocomplete="email"
                     id="email"
                     class="form-control"
                     type="email"
@@ -149,12 +151,6 @@
                 </button>
               </form>
             </div>
-            <div class="col-sm-6">
-              <p>
-                contact@agencelapanthere.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
-                de 9h à 18h, du lundi au vendredi<br />
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -165,34 +161,52 @@
       <div class="container bloc-sm">
         <div class="row">
           <div class="col-sm-12">
-            <p class="text-center white">
+            <p class="text-center">
               Agence La Panthère - Agence web basée à Lyon.<br />
+              2 place Sathonay 69001 Lyon<br />Ouvert de 9h à 18h, du lundi au
+              vendredi<br />
             </p>
             <div class="row row-no-gutters social">
               <div class="col-sm-3">
                 <div class="text-center">
-                  <a class="social" href="index.html"
+                  <a
+                    class="social"
+                    href="index.html"
+                    role="button"
+                    aria-label="Twitter"
                     ><span class="fa fa-twitter icon-md"></span
                   ></a>
                 </div>
               </div>
               <div class="col-sm-3">
                 <div class="text-center">
-                  <a class="social" href="index.html"
+                  <a
+                    class="social"
+                    href="index.html"
+                    role="button"
+                    aria-label="Facebook"
                     ><span class="fa fa-facebook icon-md"></span
                   ></a>
                 </div>
               </div>
               <div class="col-sm-3">
                 <div class="text-center">
-                  <a class="social" href="index.html"
+                  <a
+                    class="social"
+                    href="index.html"
+                    role="button"
+                    aria-label="Dribble"
                     ><span class="fa fa-dribbble icon-md"></span
                   ></a>
                 </div>
               </div>
               <div class="col-sm-3">
                 <div class="text-center">
-                  <a class="social" href="index.html"
+                  <a
+                    class="social"
+                    href="index.html"
+                    role="button"
+                    aria-label="Instagram"
                     ><span class="fa fa-instagram icon-md"></span
                   ></a>
                 </div>
@@ -203,9 +217,13 @@
       </div>
     </footer>
     <!-- ScrollToTop Button -->
-    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
-      ><span class="fa fa-chevron-up"></span
-    ></a>
+    <button
+      aria-label="gototop"
+      class="bloc-button btn btn-d scrollToTop"
+      onclick="scrollToTarget('1')"
+    >
+      <span class="fa fa-chevron-up"></span>
+    </button>
     <!-- ScrollToTop Button END-->
   </body>
 </html>
